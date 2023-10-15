@@ -7,21 +7,28 @@ import { MyFirstCompComponent } from './my-first-comp/my-first-comp.component';
 import { FormsModule } from '@angular/forms';
 import { MessageDetailsComponent } from './message-details/message-details.component';
 import { MyFirstService } from './Service/my-first.service';
+import { MenuComponent } from './menu/menu.component';
+import { AboutComponent } from './about/about.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     MyFirstCompComponent,
-    MessageDetailsComponent
+    MessageDetailsComponent,
+    MenuComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, // import the AppRoutingModule after BrowserModule 
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [
-    MyFirstService
+    MyFirstService,
+    HttpClient
   ],
   bootstrap: [AppComponent]
 })
