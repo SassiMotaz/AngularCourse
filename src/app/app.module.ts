@@ -10,6 +10,9 @@ import { MyFirstService } from './Service/my-first.service';
 import { MenuComponent } from './menu/menu.component';
 import { AboutComponent } from './about/about.component';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { ProductsComponent } from './products/products.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+import { NewProductComponent } from './new-product/new-product.component';
 
 
 @NgModule({
@@ -18,7 +21,10 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     MyFirstCompComponent,
     MessageDetailsComponent,
     MenuComponent,
-    AboutComponent
+    AboutComponent,
+    ProductsComponent,
+    ProductDetailsComponent,
+    NewProductComponent
   ],
   imports: [
     BrowserModule,

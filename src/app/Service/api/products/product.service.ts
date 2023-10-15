@@ -19,7 +19,7 @@ export class ProductService {
   }
 
   CreateProduct(product: ProductRepresentation) {
-    const productsUrl : string = `${this.baseUrl}productsDD`;
+    const productsUrl : string = `${this.baseUrl}products`;
     return this.http.post<ProductRepresentation>(productsUrl, product);
   }
 } 

@@ -8,7 +8,7 @@ import { HttpErrorResponse } from '@angular/common/http';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
-export class AboutComponent implements OnInit {
+export class AboutComponent {
 
   // constructor(
   //   private activatedRoute: ActivatedRoute
@@ -20,15 +20,15 @@ export class AboutComponent implements OnInit {
   // param: any;
   // queryParam: any;
 
-  constructor(
-    private service: ProductService
-  ) { }
-
+  
   // ngOnInit(): void {
   //   this.service.getAllProductsWithLimit().subscribe((res) => {
-  //     console.log(res);
-  //   });
-  // }
+    //     console.log(res);
+    //   });
+    // }
+  constructor(
+      private service: ProductService
+    ) { }
 
   ngOnInit(): void {
     const product = {
